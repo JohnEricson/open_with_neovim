@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+; Based on https://github.com/neovim/neovim/issues/7222#issuecomment-927413185 
+
+[HKEY_CLASSES_ROOT\*\shell\nvim-qt]
+@="Open with Neovim"
+"Icon"="\"C:\\Program Files\\Neovim\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\*\shell\nvim-qt\command]
+@="\"C:\\Program Files\\Neovim\\bin\\nvim-qt.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\nvim-qt]
+@="Open Neovim Here"
+"Icon"="\"C:\\Program Files\\Neovim\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\shell\nvim-qt\command]
+@="\"C:\\Program Files\\Neovim\\bin\\nvim-qt.exe\" \"%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\nvim-qt]
+@="&Open Neovim here"
+"Icon"="\"C:\\Program Files\\Neovim\\bin\\nvim-qt.exe\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\nvim-qt\command]
+@="\"C:\\Program Files\\Neovim\\bin\\nvim-qt.exe\" \"%v\""
